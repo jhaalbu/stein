@@ -12,4 +12,4 @@ height = st.number_input('Gi høgden den fell i fritt fall (i meter):', min_valu
     # Button to perform calculation
 if st.button('Calculate Energy'):
   energy = calculate_energy(mass, height)
-  st.write(f'Energien steien har når den treff er: {energy} kJ.')
+  st.write(f'Energien steien har når den treff er: {energy/1000} kJ.')
