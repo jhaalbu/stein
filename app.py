@@ -6,8 +6,8 @@ def calculate_energy(mass, height, gravity=9.81):
 
 # Streamlit application
 st.title('Rock Fall Energy Calculator')
-mass = st.number_input('Gi vekt av stein (i kg):', min_value=0.0, value=1000)
-height = st.number_input('Gi høgden den fell i fritt fall (i meters):', min_value=1.0, value=50)
+mass = st.number_input('Gi vekt av stein (i kg):', min_value=0, value=1000)
+height = st.number_input('Gi høgden den fell i fritt fall (i meters):', min_value=1, value=50)
 
     # Button to perform calculation
 if st.button('Calculate Energy'):
